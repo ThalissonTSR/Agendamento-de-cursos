@@ -1,0 +1,116 @@
+        /* Estilo básico para o calendário */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #calendar {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .day {
+            width: 13%;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin: 5px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .day strong {
+            display: block;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .event {
+            background-color: #e2e2e2;
+            padding: 5px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+/*Local onde troca as cores de fundo das datas marcadas (limite 5)*/
+        .cor1 {
+            background-color: #ffcc99;
+        }
+
+        .cor2 {
+            background-color: #99ccff;
+        }
+
+        .cor3{
+            background-color: yellow;
+        }
+        .cor4{
+            background-color: aqua;
+        }
+        .cor5{
+            background-color: rgb(39, 175, 39);
+        }
+
+        .event strong {
+            display: block; 
+            margin-bottom: 5px;
+        }
+        .esconder{
+            visibility: hidden;
+           
+            
+        }
+        .voltar{      
+            text-align: center;
+            
+        }
+        .ExcluirData{
+            visibility: hidden;
+            display: block;
+            
+        }
+        .sumirBtn{
+            visibility: visible;
+        }
+        button,a {
+           
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    
+}
+
+button:hover,a:hover {
+    background-color: #45a049;
+}
+a{
+    text-decoration: none;
+}
+
+.listaData{
+    display: block;
+    text-align: center;
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário de Eventos</title>
+    <link rel="stylesheet" href="css calendario.css">
+    <script src="novoScript.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calendário de Eventos - Dezembro 2024</h1>
+        <div id="calendar"></div>
+    </div>
+  
+        <button class="sumirBtn" id="sumirBtn" onclick="VerDatas()" >Ver Datas marcadas</button>
+
+
+         <form name="input">
+             <br>
+
+            <select class="listaData"  id="DataSelect" size="5"></select>
+            <br>
+        
+     
+        
+            <input id="numero" class="esconder" type="text" placeholder="Digite o numero da data"  min="1" max="5" >
+        
+            
+         </form>
+         <br>
+         <button id="ExcluirData" class="ExcluirData" type="submit" onclick="ExcluirData()">Excluir data</button>
+         <br>
+      
+<div class="voltar">
+    <a href="aba1.html">voltar ao agendamento</a>
+</div>
+
+</body>
+</html>
