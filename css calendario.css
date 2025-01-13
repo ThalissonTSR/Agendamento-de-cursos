@@ -73,20 +73,26 @@
         .esconder{
             visibility: hidden;
            
-            
         }
+
         .voltar{      
             text-align: center;
+            margin-right: 5%;
             
         }
         .ExcluirData{
             visibility: hidden;
             display: block;
-            
+                  
         }
         .sumirBtn{
             visibility: visible;
         }
+
+        .btnDate{
+            margin-left: 43%;
+        }
+
         button,a {
            
     background-color: #4CAF50;
@@ -112,5 +118,11 @@ a{
 .listaData{
     display: block;
     text-align: center;
-}
+    margin-left: 35%;
+}   
 
+.esconder{
+    display: block;
+    text-align: center;
+    margin-left: 43%;
+}
