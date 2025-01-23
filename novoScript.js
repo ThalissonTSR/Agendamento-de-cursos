@@ -91,7 +91,9 @@ function VerDatas(){
   
 // aparecer a lista de datas
     document.getElementById("ExcluirData").style.visibility= "visible"
-    document.getElementById("ExcluirData").style.margin= "0 45% 10px"
+    document.getElementById("ExcluirData").style.display= "flex"
+    document.getElementById("ExcluirData").style.justifyContent = "center"
+
 
 
 //cada "x.add" cria mais uma linha na lista de datas
@@ -123,12 +125,7 @@ function VerDatas(){
 
  //esconder botao de ver datas
     document.getElementById("sumirBtn").style.visibility= "hidden"
-     document.getElementById("sumirBtn").style.margin= "0 45% 10px"
-  
-
     document.getElementById("numero").style.visibility= "visible"
-
-    
 }
 
 function ExcluirData(){
