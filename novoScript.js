@@ -169,4 +169,32 @@ if(valor == 5){
 window.location.reload();
 }
 
+// Função que exibe o mês e o ano
+function exibirMesAno() {
+    const hoje = new Date();
+    const mes = hoje.getMonth() + 1; // Mês é zero-based, então somamos 1
+    const ano = hoje.getFullYear(); // Ano atual
+
+    // Lista com os meses em português
+    const meses = [
+        'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
+        'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
+    ];
+
+    // Nome do mês atual
+    const mesNome = meses[hoje.getMonth()]; 
+
+    // Formatar o mês para exibição com dois dígitos
+    const mesFormatado = mes < 10 ? `0${mes}` : mes;
+
+    // Exibe o mês e ano no formato "MM/YYYY" e "Nome do Mês de Ano"
+    const mesAnoNum = `${mesFormatado}/${ano}`;
+    const mesAnoNome = `${mesNome} de ${ano}`;
+
+    // Coloca o mês e ano no formato numérico e por extenso na tag h1
+    document.getElementById('data').textContent = "Calendario de " + `${mesAnoNome}`;
+}
+
+// Chama a função quando a página carregar
+window.onload = exibirMesAno;
 // anotacao precisa fica mudando o nome do mes manualmente
