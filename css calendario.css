@@ -126,3 +126,10 @@ a{
     text-align: center;
     margin-left: 40%;
 }   
+
+.areaExcluir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
